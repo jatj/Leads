@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>leads</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loader" class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Cargando</h1>
+          <img src="imagenes/loader.gif" alt="">
+        </div>
+      </div>
+      <div id="leadsContent" class="row" hidden>
+        <div class="col-xs-12">
+          <ul class="nav nav-pills nav-justified setup-panel">
+            <li data-index="0" class="active"><a href="#step-1">PREFERENCES</a></li>
+            <li data-index="1" class="disabled"><a href="#step-2">SPECIFIC</a></li>
+            <li data-index="2" class="disabled"><a href="#step-3">CONTACT</a></li>
+            <li data-index="3" class="disabled"><a href="#step-4">YOUR SOLUTION</a></li>
+          </ul>
+        </div>
+        <div  class="setup-content" id="step-1">
+          <div class="col-xs-12 separador">
+          </div>
+          <div id="gridPreferences" class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+          </div>
+          <div class="col-xs-12 text-center">
+            <p>SELECT 1 TO 3 OPTIONS THAT SUIT YOUR NEEDS</p>
+          </div>
+        </div>
+        <div  class="setup-content" id="step-2">
+          <div class="col-xs-12 separador">
+          </div>
+          <div id="gridSpecific" class="col-xs-12 col-sm-10 col-sm-offset-1">
+            
+          </div>
+          <div class="col-xs-12 text-center" >
+            <p>SELECT DEPENDING UPOND YOUR NEEDS</p>
+          </div>
+        </div>
+        <div  class="setup-content" id="step-3">
+          <div class="col-xs-12 text-center">
+            <p> YOUR SOLUTION IS ALMOST READY </p>
+          </div>
+        </div>
+        <div  class="setup-content" id="step-4">
+          <div class="col-xs-12 text-center">
+            <p> "NOMBRE" SORRY FOR THE WAIT. YOUR SOLUTION IS HERE </p>
+          </div>
+        </div>
+        <button id="next" disabled="true" class="btn btn-primary btn-lg btn-block">NEXT</button>
+      </div>
+    </div>
+    <!-- Modal info servicio -->
+    <div id="infoServicio" class="modal modal-xs fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Información</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/wizardStep.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/DBProvider.js"></script>
+    <script src="js/leads.js"></script>
+  </body>
+</html>
